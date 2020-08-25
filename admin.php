@@ -22,7 +22,7 @@ if(empty($_SESSION['login'])) to("index.php");
 		<div id="title">
 			<?= date("m 月 d 號 l"); ?> | 今日瀏覽: <?= $today['total']; ?> | 累積瀏覽:<?= $total; ?> </div>
 		<div id="title2">
-			<img src="02B01.jpg" title="健康促進網-回首頁" onclick="location.hre='index.php'">
+			<img src="02B01.jpg" title="健康促進網-回首頁" onclick="location.href='index.php'">
 		</div>
 		<div id="mm">
 			<div class="hal" id="lef">

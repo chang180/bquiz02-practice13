@@ -13,8 +13,8 @@ $pages=ceil($total/$div);
 $now=$_GET['p']??"1";
 $start=($now-1)*$div;
 $prev=(($now-1)>0)?($now-1):1;
-$next=(($now+1)<=$pages)?($now-1):$pages;
-$rows=$News->all([['sh'=>1] ]," LIMIT $start,$div ");
+$next=(($now+1)<=$pages)?($now+1):$pages;
+$rows=$News->all(['sh'=>1] ," LIMIT $start,$div ");
 foreach($rows as $row){
         ?>
         <tr>
